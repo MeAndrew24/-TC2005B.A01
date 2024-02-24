@@ -11,71 +11,86 @@
     <link rel="stylesheet" href="/styles/style.css" >
     <link rel="icon" href="/images/favicon.ico" type="image/ico" sizes="16x16">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fork-awesome/1.2.0/css/fork-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
       <div>
-        <p>Ferretería</p>
+        <p id="ferreteria">Ferretería</p>
       </div>
-      <nav>
+      <nav id="navegador">
         <a href="">Home</a>
         <a href="">Contact</a>
         <a href="">About</a>
         <a href="pages/index.html">Blog</a>
       </nav>
-      <form>   
-        <input type="text" name="search">   
-        <button type="submit">Search</button>   
+      <form id="search">   
+        <input id="block" type="text" name="search">
+        <div id="cuadrado">
+        <button id="square" type="submit"><img id="lupa" src="/images/lupa.png"></button>   
+      </div>
       </form>  
     </header>
     <main>
-      <section>
-        <article>
-        <h1>Las mejores marcas, a los mejores precios</h1>
-        <p>En Ferretería La Fuente nos preocupamos por nuestros clientes, por eso buscamos brindarles productos de  alta calidad y a un buen precio.</p>
-        <button>Encuentra una sucursal cerca de tí</button>
+      <section id="primera">
+        <article id="arriba">
+        <h1 id="titulo">Las mejores marcas, a los mejores precios</h1>
+        <p id="descrip">En Ferretería La Fuente nos preocupamos por nuestros clientes, por eso buscamos brindarles productos de  alta calidad y a un buen precio.</p>
+        <button id="boton-r"><div id="texto-boton">Encuentra una sucursal cerca de tí</div></button>
       </article>
       <aside>
-        <img src="images/foto_ferre.png" alt="foto de impermeabilizante">
+        <img id="ferreteria_1" src="images/foto_ferre.png" alt="foto de impermeabilizante">
       </aside>
       </section>
-      <section>
-        <h1>Nuestros Servicios</h1>
-        <div>
-          <img src="images/sec_1.png" alt="herramientas">
-          <p>Cotización de material sin compromiso</p>
+      <section id="seccion-2">
+        <h1 class="enca">Nuestros Servicios</h1>
+        <div id="tercia">
+        <div class="text_cir">
+          
+          <img class="circulo" src="images/sec_1.png" alt="herramientas">
+        
+          <p class="centrado">Cotización de material sin compromiso</p>
         </div>
-        <div>
-          <img src="images/sec_2.png" alt="trabajador checando">
-          <p>Asesoría de expertos para tus proyectos</p>
+        <div class="text_cir">
+          <img class="circulo" src="images/sec_2.png" alt="trabajador checando">
+          <p class="centrado">Asesoría de expertos para tus proyectos</p>
         </div>
-        <div>
-          <img src="images/sec_3.png" alt="trabajador checando techo">
-          <p>Instalación de productos por parte de nuestro equipo</p>
+        <div class="text_cir">
+          <img class="circulo" src="images/sec_3.png" alt="trabajador checando techo">
+          <p class="centrado">Instalación de productos por parte de nuestro equipo</p>
         </div>
+      </div>
       </section>
-      <section>
-        <div>
-        <h1>Blogs Recientes</h1>
-        <img src="images/casa.png" alt="casa">
-        <h2><u>5 tips para construir tu nueva casa</u></h2>
+      <section id="tercera-sec">
+        
+        <h1 class="enca">Blogs Recientes</h1>
+        <div id="cuadrado-e">
+        <div id="cuadrado">
+        <div class="primer-blog">
+        <img id="image-blog" src="images/casa.png" alt="casa">
+        <h2 id="texto-pb"><u>5 tips para construir tu nueva casa</u></h2>
       </div>
-      <div>
-        <h2><u>¿Cómo impermeabilizar mi casa de la forma correcta?</u></h2>
-        <img src="images/techo.png" alt="techo">
+      <div class="primer-blog">
+        <h2 id="texto-sb"><u>¿Cómo impermeabilizar mi casa de la forma correcta?</u></h2>
+        <img id="image-blog-2" src="images/techo.png" alt="techo">
       </div>
+    </div>
+    </div>
       </section>
     </main>
     <footer>
-      <p>Contáctanos</p>
-      <div>
-        <img src="images/telefono.png" alt="Logo Telefono">
-        <p>6621186380</p>
+      <p id="marca">Contáctanos</p>
+      <div id="contactos">
+      <div id="tel">
+        <img id="tel-n" src="images/telefox.png" alt="Logo Telefono">
+        <p id="cel-1">6621186380</p>
       </div>
-      <div>
-        <img src="images/WhatsApp_icon.png" alt="Logo Whatsapp">
-        <p>6623541253</p>
+      <div id="wha">
+        <img id="tel-wha" src="images/WhatsApp_icon.png" alt="Logo Whatsapp">
+        <p id="cel-2">6623541253</p>
       </div>
+    </div>
     </footer>
   </body>
 </html>
