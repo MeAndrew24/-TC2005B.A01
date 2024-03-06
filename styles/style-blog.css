@@ -1,7 +1,7 @@
 * {  
     margin: 0;
     padding: 0;
-    
+    border: solid;
 }
 
 header {
@@ -36,21 +36,22 @@ header {
 }
 
 nav {
-    margin-right: 3em;
+    width: auto;
     display: flex;
-    flex-wrap: nowrap;
+    
     justify-content: space-between;
-    overflow-x: auto;
+ 
     margin-top: 10px;
 }
 
 nav a {
-    padding-right: 20px;
+   
     display: flex;
-    height: auto;
     flex-direction: column;
+    height: auto;
+    
     justify-content: center;
-    width: auto;
+   
     margin-left: 40px;
 }
 
@@ -60,9 +61,8 @@ nav a {
     font-size: 1.3em;
     display: flex;
     margin-right: 1%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+   
+    
 }
 #main-blog {
     
@@ -71,16 +71,17 @@ nav a {
     max-width: 80%; /* Set a maximum width to limit the content width */
     padding: 0 20px; /* Add padding to the sides for better readability */
   }
-  #cody-container {
-    display: flex;
-    justify-content: center;
+  #cody-con {
+    display: inline-flex;
+    align-items: center;
 }
 #cody{
     
-    display: inline-block; /* Set display to inline-block */
-    width: fit-content; /* Set width to fit the content (image) */
-    max-width: 580px; /* Ensure the container doesn't exceed the width of its parent */
+
+
+
     text-align: center; /* Center the container horizontally */
+    width:100%;
 
 }
 #top{
@@ -113,6 +114,10 @@ nav a {
 }
 #recorrido{
     margin-left: 5%;
+    
+}
+aside{
+    width: 50%;
 }
 #relleno-t{
     margin-top: 1.8%;
@@ -147,7 +152,7 @@ nav a {
     display: inline;
     font-weight: 600;
     font-family: "Inter";
-    font-size: 2.8vw;
+    font-size: 2em;
     margin-left: 1%;
     padding-left: 0.5%;
     padding-right: 0.5%;
@@ -162,12 +167,6 @@ nav a {
     display: inline-block;
     width: 100%;
 }
-
-.image-container {
-    position: relative;
-    display: inline-block;
-}
-
 .escenario {
     opacity: 0.8;
     width: 100%; /* Set the width of the image to 100% */
@@ -181,8 +180,6 @@ nav a {
     left: 50%;
     transform: translateX(-50%);
     width: 100%; /* Set the width of the text container to 100% */
-    max-width: 580px; /* Ensure the text container doesn't exceed the maximum width */
-    padding: 8px; /* Add padding for better readability */
     overflow: hidden; /* Hide any overflow text */
 }
 #flexeo{
@@ -228,8 +225,7 @@ nav a {
 }
 .escenario-dos {
     opacity: 0.8;
-    width: 85%; /* Set the width of the image to 100% */
-    max-width: 580px; /* Ensure the image doesn't exceed a maximum width */
+    width: 100%; /* Set the width of the image to 100% */
 }
 .textote-dos{
     font-family: "Inter";
@@ -237,7 +233,7 @@ nav a {
     display: inline-block; /* Display as inline-block to allow alignment */
     text-align: left; /* Align text to the left */
     
-    width: 70%; /* Set width to fill the container */   
+    width: 80%; /* Set width to fill the container */   
 }
 .textito-dos{
     font-family: "Inter";
@@ -246,7 +242,7 @@ nav a {
     display: inline-block; /* Display as inline-block to allow alignment */
     text-align: left; /* Align text to the left */
     
-    width: 70%; /* Set width to fill the container */
+    width: 80%; /* Set width to fill the container */
 
 }
 #columna-f{
@@ -293,3 +289,81 @@ footer{
 #expansion:hover{
     background-color: antiquewhite;
 }
+@media(max-width:920px){
+
+
+    nav a{
+        margin-left: 0;
+        margin-right: 0;
+        
+        
+    }
+    #separacion{
+        font-size: 0.1em;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    #conjunto{
+        justify-content: center;
+       }
+    #nombre{
+        font-size: 2em;
+    }
+  }
+  @media(max-width:600px){
+    #flexeo{
+        display: flex;
+        flex-direction: column;
+    }
+    .textote{
+        font-size: 2.5em;
+    }
+    .textito{
+        font-size: 0.98em;
+    }
+    #junta-tre{
+        display: flex;
+        flex-direction: column;
+    }
+    .escenario-dos{
+        opacity: 0.8;
+        width: 100%; 
+        max-width: 580px; 
+
+    }
+    .textote-dos{
+        font-size: 2.5em;
+    }
+    .textito-dos{
+        font-size: 0.98em;
+    }
+    
+  }
+  @media(max-width:500px){
+
+    .textote{
+        font-size: 2.0em;
+    }
+    .textito{
+        font-size: 0.89em;
+    }
+    .textote-dos{
+        font-size: 2.0em;
+    }
+    .textito-dos{
+        font-size: 0.89em;
+    }
+  }
+
+@media(max-width:420px){
+
+    .textote{
+        font-size: 1.5em;
+        
+    }
+    .textito{
+        font-size: 0.75em;
+    }
+  }

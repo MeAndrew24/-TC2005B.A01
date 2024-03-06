@@ -1,6 +1,7 @@
 *{  
     margin:0;
-    padding:0
+    padding:0;
+    
 }
 
 
@@ -51,9 +52,9 @@ header{
     height: 20px;
 }
 #primera{
-    position: relative;
-    right: 55px;
-
+   margin-left: auto;
+   margin-right: auto;
+    width: 80%;
     margin-top: 40px;
     display: flex;
     justify-content: center;
@@ -65,14 +66,24 @@ header{
     line-height: 0.8em;
 }
 #ferreteria_1{
-    width:400px;
-    height:106%;
-    margin-left: 100px;
+    
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 25px;
 }
+#podemos{
+    display: inline-flex;
+    align-items: center;
+}
 #arriba{
-    margin-left: 200px;
-    width:300px;
+
+    flex-direction: column;
+    width:100%;
+}
+#veamos{
+    display: inline-flex;
+    justify-content: flex-end;
 }
 #descrip{
     font-family: "Inter";
@@ -227,3 +238,99 @@ footer{
     padding-top: 0.30%;
     letter-spacing: -0.5px;
 }
+@media(max-width:720px){
+    #titulo{
+        font-size: 3em;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    #lupa-2{
+        display: flex;
+        justify-content: center;
+    }
+    #queso{
+        display: flex;
+        justify-content: center;
+    }
+    #ferreteria{
+
+        display: inline-flex;
+        padding-left: 0;
+        
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    #primera{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    aside{
+        display: inline-flex;
+        
+        justify-content: center;
+    }
+    #tercia{
+        display: flex;
+        flex-direction: column;
+    }
+    .text_cir{
+        display: flex;
+        justify-content: center;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .centrado{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .enca{
+        text-align: center;
+    }
+    #arriba{
+        
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        position: relative;
+        right: 0;
+    }
+    #boton-r{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5%;
+       }
+       #descrip{
+        width: 100%;
+        text-align: center;
+       }
+    
+  }
+  @media(max-width:510px){
+
+    #titulo{
+        font-size: 2em;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+   #boton-r{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+   }
+   #descrip{
+    width: 100%;
+    text-align: center;
+   }
+
+    
+  }
